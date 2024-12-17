@@ -1,0 +1,150 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar .logo img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-bottom: 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ff6347;
+}
+
+/* Main content */
+main {
+    margin-left: 250px; /* To avoid overlap with the fixed navbar */
+    padding: 40px;
+}
+
+/* Section styles */
+.section {
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-content h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.section-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Timeline */
+.parcours .timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.parcours .timeline-step {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.parcours .timeline-date {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    background-color: #ff6347;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.parcours .timeline-content {
+    padding-left: 30px;
+}
+
+.parcours .timeline-content h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.parcours .timeline-content p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+}
+
+/* Animation for text */
+.section-content h2, .section-content p {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.section-content h2 {
+    animation-delay: 0.2s;
+}
+
+.section-content p {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
